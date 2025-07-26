@@ -1,0 +1,50 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Start Development Server",
+			"type": "shell",
+			"command": "pnpm",
+			"args": [
+				"start"
+			],
+			"group": "build",
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Build",
+			"type": "shell",
+			"command": "pnpm",
+			"args": [
+				"build"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "Serve",
+			"type": "shell",
+			"command": "pnpm",
+			"args": [
+				"serve"
+			],
+			"group": "build",
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Type Check",
+			"type": "shell",
+			"command": "pnpm",
+			"args": [
+				"typecheck"
+			],
+			"group": "build",
+			"problemMatcher": ["$tsc"]
+		}
+	]
+}
